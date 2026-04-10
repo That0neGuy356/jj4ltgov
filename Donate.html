@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Donate to JJ Humphrey for Oklahoma Lt. Governor | JJ4LTGOV</title>
+
+<meta name="description" content="Donate to JJ Humphrey for Oklahoma Lt. Governor. Support strong conservative leadership, protect Oklahoma values, and help JJ fight for our state's future." />
+
+<meta name="keywords" content="JJ Humphrey donate, JJ4LTGOV, Oklahoma Lt Governor donation, support JJ Humphrey campaign, donate Oklahoma politics, WinRed JJ Humphrey" />
+
+<meta name="author" content="Justin JJ Humphrey for Lt. Governor 2026" />
+
+<!-- Open Graph (Facebook, etc.) -->
+<meta property="og:title" content="Donate to JJ Humphrey for Lt. Governor | JJ4LTGOV" />
+<meta property="og:description" content="Stand with JJ Humphrey. Your donation helps fight for Oklahoma values and strong leadership." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://jj4ltgov.com/donate.html" />
+<meta property="og:image" content="https://jj4ltgov.com/images/Header.jpg" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Support JJ Humphrey for Lt. Governor" />
+<meta name="twitter:description" content="Donate today to support JJ Humphrey and help shape Oklahoma’s future." />
+<meta name="twitter:image" content="https://jj4ltgov.com/images/Header.jpg" />
+
+<!-- Canonical -->
+<link rel="canonical" href="https://jj4ltgov.com/donate.html" />
+
+<style>
+
+:root {
+  --bg: #000000;
+  --accent: #D6BB5E;
+  --muted: #ffffff;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER (MATCH INDEX) */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  border-bottom: 2px solid #333;
+  border-radius: 12px;
+  background: #111;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  height: clamp(70px, 12vw, 120px);
+  border-radius: 12px;
+}
+
+.logo .name {
+  font-weight: 700;
+  font-size: clamp(18px, 4vw, 28px);
+}
+
+.logo .subtitle {
+  font-weight: 700;
+  font-size: clamp(16px, 4vw, 28px);
+  color: #ccc;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  gap: 8px;
+}
+
+nav a {
+  color: black;
+  background: var(--accent);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  transform: scale(1.05);
+  background: #7a0000;
+}
+
+/* BURGER */
+.burger {
+  display: none;
+  flex-direction: column;
+  width: 28px;
+  height: 20px;
+  background: var(--accent);
+  padding: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.burger div {
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* MOBILE NAV */
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #111;
+  justify-content: center;
+  align-items: center;
+  z-index: 1002;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.mobile-nav.active {
+  top: 0;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-nav a {
+  margin: 10px 0;
+  padding: 14px 20px;
+  color: black;
+  font-weight: 700;
+  font-size: clamp(18px, 5vw, 24px);
+  border-radius: 12px;
+  width: 85%;
+  text-align: center;
+  background: var(--accent);
+  text-decoration: none;
+}
+
+.mobile-nav .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2.5rem;
+  color: var(--accent);
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+/* MAIN */
+.donate-wrapper {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.donate-wrapper h2 {
+  font-size: clamp(28px, 6vw, 48px);
+  color: var(--accent);
+  margin-bottom: 30px;
+}
+
+/* EMBED */
+.donate-frame {
+  width: 100%;
+  height: 900px;
+  border: 4px solid var(--accent);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  padding: 20px 10px;
+  text-align: center;
+  border-top: 2px solid #333;
+  margin-top: auto;
+}
+
+footer .donate-footer-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: var(--accent);
+  color: black;
+  padding: 14px 28px;
+  font-weight: 700;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media(max-width: 880px) {
+  nav { display: none; }
+  .burger { display: flex; }
+}
+
+@media(max-width: 500px) {
+  .donate-frame {
+    height: 1100px; /* taller for mobile scrolling */
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="images/Header.jpg" />
+    <div>
+      <div class="name">JJ Humphrey</div>
+      <div class="subtitle">for Lt. Governor</div>
+    </div>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Issues.html">The Issues</a>
+    <a href="Social%20Media.html">Social Media</a>
+    <a href="Event Calendar.html">Event Calendar</a>
+    <a href="Volunteer.html">Volunteer</a>
+    <a href="https://secure.winred.com/justin-jj-humphrey-for-lt-governor-2026/storefront/" target="_blank">Merch Shop</a>
+    <a href="Donate.html">Donate</a>
+  </nav>
+
+  <div class="burger" id="burger">
+    <div></div><div></div><div></div>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="close-btn" id="close-nav">×</button>
+    <a href="index.html">Home</a>
+    <a href="Issues.html">The Issues</a>
+    <a href="Social%20Media.html">Social Media</a>
+    <a href="Event Calendar.html">Event Calendar</a>
+    <a href="Volunteer.html">Volunteer</a>
+    <a href="#">Merch Shop</a>
+    <a href="Donate.html">Donate</a>
+  </div>
+</header>
+
+<main>
+  <div class="donate-wrapper">
+    <h2>Support JJ Humphrey’s Campaign</h2>
+
+    <iframe
+      class="donate-frame"
+      src="https://secure.winred.com/justin-jj-humphrey-for-lt-governor-2026/donate"
+      frameborder="0"
+      scrolling="yes">
+    </iframe>
+
+  </div>
+</main>
+
+<footer>
+  <p>Website donated by PixelDominion LLC.</p>
+  <p>Authorized and paid for by Justin JJ Humphrey for LT. GOV 2026</p>
+  <a href="https://secure.winred.com/justin-jj-humphrey-for-lt-governor-2026/donate" class="donate-footer-btn">Support JJ’s Campaign Today</a>
+</footer>
+
+<script>
+const burger = document.getElementById('burger');
+const mobileNav = document.getElementById('mobile-nav');
+const closeNav = document.getElementById('close-nav');
+
+burger.onclick = () => mobileNav.classList.add('active');
+closeNav.onclick = () => mobileNav.classList.remove('active');
+</script>
+
+</body>
+</html>
