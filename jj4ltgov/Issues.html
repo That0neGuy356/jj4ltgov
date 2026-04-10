@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+<title>JJ Humphrey Policy Issues | Oklahoma Lt. Governor Candidate 2026 | JJ4LTGOV</title>
+
+<meta name="description" content="Explore JJ Humphrey’s key policy positions for Oklahoma Lt. Governor 2026, including criminal justice reform, DHS accountability, rural broadband expansion, agricultural reform, and government transparency." />
+
+<meta name="keywords" content="JJ Humphrey issues, Oklahoma Lt Governor policy, JJ4LTGOV, Oklahoma politics 2026, criminal justice reform Oklahoma, DHS Oklahoma reform, Oklahoma broadband expansion, agricultural monopoly Oklahoma, rural Oklahoma issues, government accountability Oklahoma" />
+
+<meta name="author" content="Justin JJ Humphrey for Lt. Governor 2026" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="JJ Humphrey Policy Issues | Oklahoma Lt. Governor 2026" />
+<meta property="og:description" content="See JJ Humphrey’s stance on key Oklahoma issues including justice reform, DHS accountability, rural infrastructure, and agriculture." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://jj4ltgov.com/issues.html" />
+<meta property="og:image" content="https://jj4ltgov.com/images/Header.jpg" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="JJ Humphrey Policy Issues | Oklahoma Lt. Governor 2026" />
+<meta name="twitter:description" content="Explore JJ Humphrey’s plan for Oklahoma: justice reform, DHS accountability, broadband expansion, and more." />
+<meta name="twitter:image" content="https://jj4ltgov.com/images/Header.jpg" />
+
+<!-- Canonical -->
+<link rel="canonical" href="https://jj4ltgov.com/issues.html" />
+
+<style>
+
+:root {
+  --bg: #000000;
+  --accent: #D6BB5E;
+  --muted: #ffffff;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER (MATCH INDEX) */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  border-bottom: 2px solid #333;
+  border-radius: 12px;
+  background: #111;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  height: clamp(70px, 12vw, 120px);
+  border-radius: 12px;
+}
+
+.logo .name {
+  font-weight: 700;
+  font-size: clamp(18px, 4vw, 28px);
+}
+
+.logo .subtitle {
+  font-weight: 700;
+  font-size: clamp(16px, 4vw, 28px);
+  color: #ccc;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  gap: 8px;
+}
+
+nav a {
+  color: black;
+  background: var(--accent);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  transform: scale(1.05);
+  background: #7a0000;
+}
+
+/* BURGER */
+.burger {
+  display: none;
+  flex-direction: column;
+  width: 28px;
+  height: 20px;
+  background: var(--accent);
+  padding: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.burger div {
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* MOBILE NAV */
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #111;
+  justify-content: center;
+  align-items: center;
+  z-index: 1002;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.mobile-nav.active {
+  top: 0;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-nav a {
+  margin: 10px 0;
+  padding: 14px 20px;
+  color: black;
+  font-weight: 700;
+  font-size: clamp(18px, 5vw, 24px);
+  border-radius: 12px;
+  width: 85%;
+  text-align: center;
+  background: var(--accent);
+  text-decoration: none;
+}
+
+.mobile-nav .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2.5rem;
+  color: var(--accent);
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+/* MAIN */
+.issues-wrapper {
+  max-width: 1300px;
+  margin: 50px auto;
+  padding: 0 16px;
+}
+
+.issues-wrapper h2 {
+  text-align: center;
+  font-size: clamp(28px, 6vw, 48px);
+  color: var(--accent);
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.issue-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* ISSUE CARD */
+.issue-box {
+  background: #111;
+  border: 4px solid var(--accent);
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.issue-box:hover {
+  transform: scale(1.03);
+}
+
+.issue-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.issue-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.issue-content h3 {
+  font-size: clamp(20px, 4vw, 26px);
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.issue-content p {
+  font-size: clamp(14px, 3vw, 16px);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+.issue-buttons {
+  margin-top: auto;
+}
+
+.issue-buttons a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  text-decoration: none;
+  background: var(--accent);
+  color: black;
+  transition: 0.3s;
+}
+
+.issue-buttons a:hover {
+  background: #7a0000;
+  transform: scale(1.05);
+}
+
+/* FOOTER (MATCH INDEX) */
+footer {
+  background: #111;
+  padding: 20px 10px;
+  text-align: center;
+  border-top: 2px solid #333;
+  margin-top: auto;
+}
+
+footer .donate-footer-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: var(--accent);
+  color: black;
+  padding: 14px 28px;
+  font-weight: 700;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media(max-width: 880px) {
+  nav { display: none; }
+  .burger { display: flex; }
+}
+
+@media(max-width: 320px) {
+  .issue-content {
+    padding: 14px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="images/Header.jpg" />
+    <div>
+      <div class="name">JJ Humphrey</div>
+      <div class="subtitle">for Lt. Governor</div>
+    </div>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Issues.html">The Issues</a>
+    <a href="Social%20Media.html">Social Media</a>
+    <a href="Event Calendar.html">Event Calendar</a>
+    <a href="Volunteer.html">Volunteer</a>
+    <a href="#">Merch Shop</a>
+    <a href="#">Donate</a>
+  </nav>
+
+  <div class="burger" id="burger">
+    <div></div><div></div><div></div>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="close-btn" id="close-nav">×</button>
+    <a href="index.html">Home</a>
+    <a href="Issues.html">The Issues</a>
+    <a href="Social%20Media.html">Social Media</a>
+    <a href="Event Calendar.html">Event Calendar</a>
+    <a href="Volunteer.html">Volunteer</a>
+    <a href="#">Merch Shop</a>
+    <a href="#">Donate</a>
+  </div>
+</header>
+
+<main>
+  <div class="issues-wrapper">
+    <h2>JJ Humphrey’s Key Issues</h2>
+
+    <div class="issue-grid">
+
+     <!-- Jessie Butler / Payne County -->
+<div class="issue-box">
+  <img src="images/Jesse.jpg" alt="Jessie Butler Issue">
+  <div class="issue-content">
+    <h3>Jesse Butler Case & Payne County Accountability</h3>
+    <p><strong>The Problem:</strong> Abuse and misconduct ignored in Payne County, leaving victims without justice.</p>
+    <p><strong>The Plan:</strong> Push for a thorough grand jury investigation, hold officials accountable, and ensure transparency in all county cases.</p>
+    <div class="issue-buttons">
+      <a href="Jesse.html">Learn More</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- DHS -->
+<div class="issue-box">
+  <img src="images/DHS.webp" alt="DHS Issue">
+  <div class="issue-content">
+    <h3>Oklahoma Department of Human Services (DHS)</h3>
+    <p><strong>The Problem:</strong> Wrongful child removals, due process violations, and failures within DHS, alongside abuse concerns in related systems like OJA.</p>
+    <p><strong>The Plan:</strong> Move CPS under local sheriffs, restore accountability in DHS, and enforce strict oversight across all child welfare systems.</p>
+    <div class="issue-buttons">
+      <a href="DHS.html">Learn More</a>
+    </div>
+  </div>
+</div>
+
+
+
+      <!-- DAs -->
+      <div class="issue-box">
+        <img src="images/Bad DAs.webp" alt="District Attorneys Issue">
+        <div class="issue-content">
+          <h3>Oklahoma District Attorneys (DAs)</h3>
+          <p><strong>The Problem:</strong> Profit-driven probation schemes, blocked exonerations, and power protection.</p>
+          <p><strong>The Plan:</strong> End profit-driven probation, require independent review of wrongful convictions, and hold DAs accountable.</p>
+          <div class="issue-buttons">
+            <a href="DA.html">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- DOC -->
+      <div class="issue-box">
+        <img src="images/DOC.jpg" alt="DOC Issue">
+        <div class="issue-content">
+          <h3>Oklahoma Department of Corrections (DOC)</h3>
+          <p><strong>The Problem:</strong> Violence, extortion, mismanagement, and lack of rehabilitation.</p>
+          <p><strong>The Plan:</strong> Build regional state-run facilities with mental health pods for oversight and reduced transport costs.</p>
+          <div class="issue-buttons">
+            <a href="DOC.html">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Broadband -->
+      <div class="issue-box">
+        <img src="images/Broadband.jpg" alt="Broadband Issue">
+        <div class="issue-content">
+          <h3>Broadband Expansion & Infrastructure</h3>
+          <p><strong>The Problem:</strong> Billions wasted on contracts without expanding rural access.</p>
+          <p><strong>The Plan:</strong> Deliver affordable universal broadband using cost-effective solutions.</p>
+          <div class="issue-buttons">
+            <a href="Broadband.html">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Big AG -->
+<div class="issue-box">
+  <img src="images/meatpackers.webp" alt="Big Agriculture Issue">
+  <div class="issue-content">
+    <h3>Big AG Monopolies</h3>
+    <p><strong>The Problem:</strong> A small number of large agricultural corporations are unethically, and sometimes illegally manipulating the martket , squeezing out family farmers and driving up costs.</p>
+    <p><strong>The Plan:</strong> Break up monopoly control, enforce fair competition, and put Oklahoma farmers and ranchers first again.</p>
+    <div class="issue-buttons">
+      <a href="AG.html">Learn More</a>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</main>
+
+
+<footer>
+  <p>Website donated by PixelDominion LLC.</p>
+  <p>Authorized and paid for by Justin JJ Humphrey for LT. GOV 2026</p>
+  <a href="#" class="donate-footer-btn">Support JJ’s Campaign Today</a>
+</footer>
+
+<script>
+const burger = document.getElementById('burger');
+const mobileNav = document.getElementById('mobile-nav');
+const closeNav = document.getElementById('close-nav');
+
+burger.onclick = () => mobileNav.classList.add('active');
+closeNav.onclick = () => mobileNav.classList.remove('active');
+</script>
+
+</body>
+</html>
